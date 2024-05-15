@@ -1,4 +1,5 @@
 # Diabetes Predictor ML Model
+![Diabetes Predictor Preview](preview.png)
 
 The Diabetes Predictor ML Model is a machine learning model built to predict whether a person has diabetes or not based on certain parameters. It utilizes Support Vector Machine (SVM) as the classifier and is trained on the PIMA Diabetes dataset. The model takes into account the following parameters:
 
@@ -15,9 +16,8 @@ The Diabetes Predictor ML Model is a machine learning model built to predict whe
 
 - **Diabetes_Predictor.ipynb**: The actual python notebook of the model.
 - **diabetes.csv**: The database used to train and test the model.
-- **diabetes_model.sav**: This file contains the trained SVM model saved using the joblib library.
-- **ml_api.py**: This file creates a RESTful API of the model on localhost, allowing users to make predictions using HTTP requests.
-- **test.py**: This file is used to test the functionality of the API.
+- **diabetes_model.sav**: This file contains the trained SVM model.
+- **deployed_model.py**: UI created using Streamlit for dynamic input of the data.
 
 ## Usage
 
@@ -35,9 +35,9 @@ python test.py
 
 The model is trained using the PIMA Diabetes dataset, which contains various health-related parameters of individuals. The SVM classifier is trained to predict whether a person has diabetes or not based on these parameters.
 
-## API Endpoints
+## UI Interface
 
-- **POST /predict**: Endpoint to make predictions. Requires input parameters (Pregnancies, Glucose, BloodPressure, SkinThickness, Insulin, BMI, DiabetesPedigreeFunction, Age) in JSON format.
+The UI interface created with Streamlit module of Python allows users to dynamically input data and get predictions instantly.
 
 ## Dataset
 
